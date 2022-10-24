@@ -4,10 +4,12 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Input Data Mahasiswa</title>
+	<link rel="stylesheet" type="text/css" href="<?php echo base_url()?>desain/css/style.css">
 </head>
 <body>
 	<center>
 		<h1>Input Data Mahasiswa</h1>
+		<label style="color:#FF0000"><?php echo validation_errors(); ?></label>
 	</center>
 	<form action="<?php echo base_url(). 'index.php/kampus/tambah_aksi'; ?>" method="POST" enctype="multipart/form-data">
 		<table style="margin:20px auto;">

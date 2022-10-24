@@ -19,9 +19,9 @@ class Kampus extends CI_Controller{
 
     function tambah_aksi(){
         $this->form_validation->set_rules('nim','NIM','required|min_length[8]|max_length[8]');
-        $this->form_validation->set_rules('nama','Nama','required|alpha|min_length[5]|max_length[15]');
-        $this->form_validation->set_rules('alamat','Alamat','required|alpha');
-        $this->form_validation->set_rules('pekerjaan','Pekerjaan','required|alpha');
+        $this->form_validation->set_rules('nama','Nama','require|min_length[5]|max_length[15]');
+        $this->form_validation->set_rules('alamat','Alamat','required');
+        $this->form_validation->set_rules('pekerjaan','Pekerjaan','required');
 
         if($this->form_validation->run() == TRUE)
         {
